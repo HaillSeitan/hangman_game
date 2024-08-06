@@ -1,0 +1,107 @@
+body {
+  background-color: rgb(208, 207, 200) !important;
+}
+
+#alphabet {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.letter {
+  margin: 8px;
+}
+
+.wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 1.5rem;
+}
+
+#word {
+  font-size: 2rem;
+}
+
+#lives {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #454545;
+}
+
+#hangman {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border: 1px solid #454545;
+  position: relative;
+}
+
+.hangman-item {
+  background-color: #454545;
+  position: absolute;
+}
+
+#hangman_9 {
+  width: 100px;
+  height: 3px;
+  bottom: 0;
+  left: 50px;
+}
+#hangman_8 {
+  width: 3px;
+  height: 140px;
+  bottom: 0;
+  left: 50px;
+}
+#hangman_7 {
+  width: 50px;
+  height: 3px;
+  left: 50px;
+  bottom: 140px;
+}
+
+#hangman_6 {
+  width: 3px;
+  height: 33px;
+  left: 99px;
+  bottom: 110px;
+}
+#hangman_5 {
+  width: 30px;
+  aspect-ratio: 1/1;
+  background-color: rgba(240, 248, 255, 0);
+  border: #454545 3px solid;
+  border-radius: 50%;
+  left: calc(100px - 30px / 2);
+  bottom: calc(112px - 30px);
+}
+
+#hangman_4 {
+  width: 3px;
+  height: 40px;
+  left: calc(100px - 31px / 2 + 20px - 6px);
+  bottom: calc(112px - 30px - 40px);
+}
+
+#hangman_3 {
+  width: 45px;
+  height: 3px;
+  left: calc(100px - 45px / 2);
+  bottom: calc(112px - 30px - 15px);
+}
+#hangman_2 {
+  width: 30px;
+  height: 3px;
+  transform: rotate(-45deg);
+  bottom: 33px;
+  left: 75px;
+}
+#hangman_1 {
+  width: 30px;
+  height: 3px;
+  transform: rotate(45deg);
+  bottom: 33px;
+  left: 95px;
+}
